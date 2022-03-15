@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16;
+  height: 100vh;
+
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'nav content sidebar'
+    'nav footer footer';
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 60px 1fr 70px;
+}
+
+header,
+footer,
+main,
+aside,
+nav {
+  background-color: #eee;
+  color: black;
+}
+
+header {
+  grid-area: header;
+  background-color: white;
+  color: black;
+  border-bottom: 3px solid black;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+}
+
+header a {
+  padding: 10px;
+  margin: 0 5px;
+}
+
+header h1 {
+  color: black;
+}
+
+/* Navbar */
+
+header a:hover {
+  border-bottom: 2px black solid;
+}
+/* end navbar */
+
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: content;
+  text-align: center;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.centered {
+  display: grid;
+  height: 90vh;
+  align-items: center;
+  justify-items: center;
+} 
+
+.form-control {
+  display: grid;
+}
+
+input {
+  border: 3px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 5px 5px rgba(0, 0, 0, 0.3);
+  height: 40px;
+  padding: 5px;
+}
+
+#about {
+  height: 400px;
+  line-height: 1.4;
+}
+
+
+
+

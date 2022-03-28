@@ -7,14 +7,35 @@
 ul {
   list-style: none;
 }
+ul.links {
+  text-align: left;
+}
+ul.links li {
+  text-decoration: underline;
+}
+li {
+  margin: 10px;
+  padding: 10px 0;
+}
 a {
-  color: black;
   text-decoration: none;
+  color: #000;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-img {
+  width: 300px;
+  height: auto;
 }
 
 body {
-  font-family: Helvetica, sans-serif;
-  font-size: 16;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  font-size: 20px;
   height: 100vh;
 
   display: grid;
@@ -35,14 +56,16 @@ nav {
   color: black;
 }
 
+
+/* Navbar */
 header {
   grid-area: header;
-  background-color: white;
+  background-color: rgba(255, 200, 200, 0.9);
   color: black;
   border-bottom: 3px solid black;
   position: fixed;
   width: 100%;
-  height: 60px;
+  height: 70px;
 }
 
 header a {
@@ -54,8 +77,6 @@ header h1 {
   color: black;
 }
 
-/* Navbar */
-
 header a:hover {
   border-bottom: 2px black solid;
 }
@@ -65,10 +86,16 @@ header a:hover {
 nav {
   grid-area: nav;
 }
+nav .card {
+  background-color: dodgerblue;
+}
 
 main {
   grid-area: content;
   text-align: center;
+}
+main .card{
+  background-color: rgb(134, 192, 238);
 }
 
 aside {
@@ -102,7 +129,32 @@ input {
 
 #about {
   height: 400px;
-  line-height: 1.4;
+}
+
+.active {
+  visibility: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #eee;
+  flex-direction: column;
+}
+
+.modal-about,
+.modal-features,
+.modal-email {
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 
 

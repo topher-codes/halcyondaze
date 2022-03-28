@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Chris and Chelsea Andrews">
+  <meta name="description" content="the halcyon days webspace portal. this is a local project where people gather to exchange information securely.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utilities.css">
+  
+  <title>Halcyon Days</title>
+</head>
+<body>
+  <header>
+    <div class="container flex">
+      <h1><a href="index.html">Halcyon Days</a></h1>
+        <div class="nav-items">
+          <a href="login.html">Login</a>
+          <a href="https://letters.drednaut.net">Blog</a>
+          <a href="about.html">About</a>
+        </div>
+    </div>
+  </header>
+    <main>
+      <div class="container">
+        <div class="grid">
+
+          <!-- Spacer -->
+          <div class="spacer"></div>
+          <!-- Item One -- ABOUT -->
+          <div class="card hovers" data-id="card-about">
+            <div class="card-header">
+              <h2>About</h2>
+            </div>
+            <div class="card-body">
+              <p>
+                <!-- <p>We do web design.</p> <p>We like to make things look good.</p>
+                Halcyon Days is a local project where people gather to exchange information securely.
+              </p> -->
+            </div>
+          </div>
+
+          <!-- Spacer -->
+          <div class="spacer"></div>
+          <!-- Item Two -- FEATURES -->
+          <div class="card hovers" data-id="card-features">
+            <div class="card-header">
+              <h2>Features</h2>
+            </div>
+            <div class="card-body">
+              <p>
+                <!-- Sometimes it results in a lot of fun, sometimes it results in a lot of work. Something beautiful is usually created in the end. -->
+              </p>
+            </div>
+          </div>
+
+          <!-- Spacer -->
+          <div class="spacer"></div>
+
+          <!-- Item Three -- Other Stuff -->
+          <div class="card" data-id="card-otherstuff">
+            <div class="card-header">
+              <h2>Other Stuff</h2>
+            </div>
+            <div class="card-body">
+              <div class="container">
+                <p>
+                  <ul class="links"><h3>Links</h3>
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Other Sites</a></li>
+                    <li><a href="#"></a></li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </main>
+    <nav>
+      <div class="container">
+        <div class="grid">
+          <div class="card hovers" data-id="card-email">
+            <div class="card-header">
+              <h2>Contact</h2>
+            </div>
+            <div class="card-body">
+              <p>
+                Email Me 
+              </p>
+           </div>
+    </nav>
+    <aside>
+      
+    </aside>
+    <footer>
+      <h1 class="text-center">&copy;Copyright  Halcyon Daze LLC &copy;2022</h1>
+    </footer>
+
+    <div class="modal active" id="modal">
+      
+      <div class="container">
+        <div class="modal-about active">
+          <h1>Remember when the internet was simple, and easier to navigate?</h1>
+          <div class="spacer"></div>
+          <h2>We do web design. </h2>
+          <h3>We like to make things look good.</h3>
+          <h4>Halcyon Days is a local project where people gather to exchange information securely.</h4>
+        </div>
+        <div class="modal-features active">
+          <h1>Features? Less is often more.</h1>
+          <div class="spacer"></div>
+          <h2>We Believe</h2>
+          <ul>
+            <li><p>The web should be easy to navigate, and links should include some context</p></li>
+            <li><p>Animations are cool. Loading times are not.</p></li>
+            <li><p>If it's not broken, don't fix it!</p></li>
+            <li><p>Marketing buzzwords are lame</p></li>
+          </ul>
+        </div>
+        <div class="modal-email active">
+          <div class="container">
+            <div class="card contact-img">
+              <img src="https://drednaut.net/avatar.webp" alt="profile photo" />
+            </div>
+          <h1>chris@halcyondaze.net</h1>
+          <h1>chelsea@halcyondaze.net</h1>
+          <h2>971.268.3950</h2>
+          <h3>Portland, OR</h3>
+          </div>
+        </div>
+      </div>
+      <span class="close"><button type="button" class="btn">Close</button></span>
+    </div>
+  
+    <script src="modals.js" type="text/javascript"></script>
+</body>
+</html>

@@ -15,6 +15,15 @@
   margin: 10px;
 }
 
+.card.hovers:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.spacer {
+  margin-bottom: 100px;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;

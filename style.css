@@ -1,3 +1,11 @@
+:root {
+  --primary-color : #730517;
+  --secondary-color : #f44560;
+  --third-color : #44d1df;
+  --fourth-color : #32a4a7;
+  --fifth-color : #1e7069;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -47,12 +55,11 @@ body {
   grid-template-rows: 60px 1fr 70px;
 }
 
-header,
 footer,
 main,
 aside,
 nav {
-  background-color: #eee;
+  background-color: #fff;
   color: black;
 }
 
@@ -60,7 +67,7 @@ nav {
 /* Navbar */
 header {
   grid-area: header;
-  background-color: rgba(255, 200, 200, 0.9);
+  background-color: var(--secondary-color);
   color: black;
   border-bottom: 3px solid black;
   position: fixed;
@@ -87,7 +94,7 @@ nav {
   grid-area: nav;
 }
 nav .card {
-  background-color: dodgerblue;
+  background-color: var(--third-color);
 }
 
 main {
@@ -95,7 +102,7 @@ main {
   text-align: center;
 }
 main .card{
-  background-color: rgb(134, 192, 238);
+  background-color: var(--fourth-color);
 }
 
 aside {
@@ -144,7 +151,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
   color: #eee;
   flex-direction: column;
 }

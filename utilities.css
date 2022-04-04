@@ -18,6 +18,7 @@
 .card.hovers:hover {
   background-color: #333;
   color: #fff;
+  cursor: pointer;
 }
 
 .spacer {
@@ -51,6 +52,7 @@
 
 .btn:hover {
   transform: scale(0.98);
+  cursor: pointer;
 }
 
 
